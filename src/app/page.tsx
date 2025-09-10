@@ -150,7 +150,7 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6"
               >
-                Hi there, I'm{' '}
+                Hi there, I&apos;m{' '}
                 <span className="text-blue-600 dark:text-blue-400">Nikhil Singh</span>{' '}
                 👋
               </motion.h1>
@@ -270,18 +270,18 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               🚀 Passionate Full-Stack Developer
               </h3>
+                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                I&apos;m a Computer Science graduate with a strong passion for building web applications
+                and solving technical problems through code. I enjoy learning new technologies
+                and experimenting with projects that challenge me to grow.
+                My current interests include exploring AI-powered applications,
+                microservices architecture, and contributing to open-source projects,
+                as I work towards developing scalable solutions that make a positive impact.
+                </p>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              I’m a Computer Science graduate with a strong passion for building web applications
-              and solving technical problems through code. I enjoy learning new technologies
-              and experimenting with projects that challenge me to grow.
-              My current interests include exploring AI-powered applications,
-              microservices architecture, and contributing to open-source projects,
-              as I work towards developing scalable solutions that make a positive impact.
-              </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              I’m always eager to learn and take on new challenges that help me improve my skills.
+              I&apos;m always eager to learn and take on new challenges that help me improve my skills.
               I believe in continuous growth and enjoy collaborating with others to build meaningful projects.
-              Let’s connect and create something amazing together! 🚀
+              Let&apos;s connect and create something amazing together! 🚀
               </p>
             </motion.div>
 
@@ -470,7 +470,7 @@ export default function Home() {
                       <li key={idx} className="flex items-start">
                         <span className="text-blue-500 mr-2">•</span>
                         {feature}
-                      </li>
+          </li>
                     ))}
                   </ul>
                 </div>
@@ -521,8 +521,8 @@ export default function Home() {
               </p>
               <motion.a
                 href="https://github.com/nikk2511"
-                target="_blank"
-                rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-3 bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-100 text-white dark:text-gray-900 px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
@@ -582,8 +582,8 @@ export default function Home() {
                 
                 <motion.a
                   href={cert.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200 font-medium"
@@ -685,7 +685,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
             <p className="text-lg text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-              I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology!
+              I&apos;m always open to discussing new opportunities, interesting projects, or just having a chat about technology!
             </p>
           </motion.div>
 

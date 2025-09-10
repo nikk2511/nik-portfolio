@@ -38,7 +38,7 @@ const Footer = () => {
           className="text-center"
         >
           <h3 className="text-2xl font-bold mb-4">
-            Thanks for visiting! Let's build something amazing together! 🚀
+            Thanks for visiting! Let&apos;s build something amazing together! 🚀
           </h3>
           <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
             Feel free to reach out! Happy Coding!
