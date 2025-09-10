@@ -135,20 +135,20 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-900 dark:to-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-900 dark:to-slate-800 pt-20 pb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center lg:text-left"
+              className="text-center lg:text-left order-2 lg:order-1"
             >
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight"
               >
                 Hi there, I&apos;m{' '}
                 <span className="text-blue-600 dark:text-blue-400">Nikhil Singh</span>{' '}
@@ -159,7 +159,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 h-12 flex items-center justify-center lg:justify-start"
+                className="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 h-10 sm:h-12 flex items-center justify-center lg:justify-start"
               >
                 <TypingAnimation
                   texts={typingTexts}
@@ -174,7 +174,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
-                className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl"
+                className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-2xl mx-auto lg:mx-0"
               >
                 Computer Science undergraduate passionate about building innovative web applications 
                 and solving complex problems with modern technologies.
@@ -184,13 +184,13 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
-                className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start"
               >
                 <motion.a
                   href="#contact"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
                 >
                   Get In Touch
                 </motion.a>
@@ -198,7 +198,7 @@ export default function Home() {
                   href="#projects"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+                  className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 sm:px-8 py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
                 >
                   View My Work
                 </motion.a>
@@ -207,9 +207,9 @@ export default function Home() {
                   download="Nikhil_Singh_Resume.pdf"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+                  className="flex items-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-6 sm:px-8 py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base justify-center"
                 >
-                  <Download size={20} />
+                  <Download size={18} />
                   Resume
                 </motion.a>
               </motion.div>
@@ -219,11 +219,11 @@ export default function Home() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="flex justify-center"
+              className="flex justify-center order-1 lg:order-2 mb-8 lg:mb-0"
             >
               <div className="relative">
-                <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center p-2">
-                  <div className="w-72 h-72 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center overflow-hidden">
+                <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center p-2">
+                  <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center overflow-hidden">
         <Image
                       src="/images/profile.jpg"
                       alt="Nikhil Singh - Full-Stack Developer"
@@ -247,30 +247,31 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white dark:bg-slate-900">
+      <section id="about" className="py-16 sm:py-20 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
+              className="order-2 lg:order-1"
             >
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
               🚀 Passionate Full-Stack Developer
               </h3>
-                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 sm:mb-6">
                 I&apos;m a Computer Science graduate with a strong passion for building web applications
                 and solving technical problems through code. I enjoy learning new technologies
                 and experimenting with projects that challenge me to grow.
@@ -278,7 +279,7 @@ export default function Home() {
                 microservices architecture, and contributing to open-source projects,
                 as I work towards developing scalable solutions that make a positive impact.
                 </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
+              <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-4 sm:mb-6">
               I&apos;m always eager to learn and take on new challenges that help me improve my skills.
               I believe in continuous growth and enjoy collaborating with others to build meaningful projects.
               Let&apos;s connect and create something amazing together! 🚀
@@ -375,20 +376,20 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-50 dark:bg-slate-800">
+      <section id="skills" className="py-16 sm:py-20 bg-gray-50 dark:bg-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Skills & Technologies</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Skills & Technologies</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {Object.entries(skills).map(([category, skillList], index) => (
               <motion.div
                 key={category}
@@ -396,16 +397,16 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-lg"
+                className="bg-white dark:bg-slate-900 p-4 sm:p-6 rounded-lg shadow-lg"
               >
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 capitalize">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 capitalize">
                   {category.replace(/([A-Z])/g, ' $1').trim()}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {skillList.map((skill) => (
                     <span
                       key={skill}
-                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+                      className="px-2 sm:px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs sm:text-sm rounded-full"
                     >
                       {skill}
                     </span>
@@ -418,20 +419,20 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-white dark:bg-slate-900">
+      <section id="projects" className="py-16 sm:py-20 bg-white dark:bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Featured Projects</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -440,22 +441,22 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className="bg-gray-50 dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-slate-700"
+                className="bg-gray-50 dark:bg-slate-800 p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-slate-700"
               >
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {project.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">
                   {project.description}
                 </p>
                 
                 <div className="mb-4">
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Tech Stack:</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm sm:text-base">Tech Stack:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.techStack.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full font-medium"
+                        className="px-2 sm:px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-xs rounded-full font-medium"
                       >
                         {tech}
                       </span>
@@ -464,8 +465,8 @@ export default function Home() {
                 </div>
 
                 <div className="mb-6">
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Key Features:</h4>
-                  <ul className="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm sm:text-base">Key Features:</h4>
+                  <ul className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 space-y-1">
                     {project.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start">
                         <span className="text-blue-500 mr-2">•</span>
@@ -475,14 +476,14 @@ export default function Home() {
                   </ul>
                 </div>
 
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
                   <motion.a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-slate-600 px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
+                    className="flex items-center justify-center gap-2 bg-gray-200 dark:bg-slate-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-slate-600 px-3 sm:px-4 py-2 rounded-lg transition-colors duration-200 font-medium text-sm"
                   >
                     <Github size={16} />
                     GitHub
@@ -493,7 +494,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
+                    className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-3 sm:px-4 py-2 rounded-lg transition-colors duration-200 font-medium text-sm"
                   >
                     <ExternalLink size={16} />
                     Live Demo
@@ -509,13 +510,13 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-center mt-16"
+            className="text-center mt-12 sm:mt-16"
           >
-            <div className="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 p-8 rounded-2xl border border-gray-200 dark:border-slate-600">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            <div className="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-slate-800 dark:to-slate-700 p-6 sm:p-8 rounded-2xl border border-gray-200 dark:border-slate-600">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 🚀 Visit GitHub to see more amazing projects!
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
                 Explore my complete portfolio of projects, contributions, and open-source work. 
                 From web applications to AI-powered solutions, discover the full scope of my development journey.
               </p>
@@ -525,11 +526,11 @@ export default function Home() {
             rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-3 bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-100 text-white dark:text-gray-900 px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                className="inline-flex items-center gap-2 sm:gap-3 bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-100 text-white dark:text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-xl font-bold text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <Github size={24} />
+                <Github size={20} />
                 View GitHub Profile
-                <ExternalLink size={20} />
+                <ExternalLink size={18} />
               </motion.a>
             </div>
           </motion.div>
@@ -537,23 +538,23 @@ export default function Home() {
       </section>
 
       {/* Certifications Section */}
-      <section id="certifications" className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-900 dark:to-slate-800">
+      <section id="certifications" className="py-16 sm:py-20 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-slate-900 dark:to-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">🏆 Certifications</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">🏆 Certifications</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               Professional certifications that validate my expertise in modern technologies
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {certifications.map((cert, index) => (
               <motion.div
                 key={cert.name}
@@ -562,21 +563,21 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className="group bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-slate-700"
+                className="group bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-slate-700"
               >
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">🏅</span>
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
+                    <span className="text-white font-bold text-base sm:text-lg">🏅</span>
                   </div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-slate-700 px-3 py-1 rounded-full">
+                  <div className="text-xs text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-slate-700 px-2 sm:px-3 py-1 rounded-full">
                     Verified
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
                   {cert.name}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-6 text-sm">
+                <p className="text-gray-600 dark:text-gray-300 mb-4 sm:mb-6 text-sm">
                   {cert.issuer}
                 </p>
                 
@@ -586,7 +587,7 @@ export default function Home() {
             rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200 font-medium"
+                  className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors duration-200 font-medium text-sm"
                 >
                   View Certificate
                   <ExternalLink size={16} />
@@ -673,23 +674,23 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50 dark:bg-slate-800">
+      <section id="contact" className="py-16 sm:py-20 bg-gray-50 dark:bg-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-12 sm:mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
               I&apos;m always open to discussing new opportunities, interesting projects, or just having a chat about technology!
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -697,15 +698,15 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="bg-white dark:bg-slate-900 p-8 rounded-lg shadow-lg">
-                <Mail className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Email</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">imnik2511@gmail.com</p>
+              <div className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-lg shadow-lg">
+                <Mail className="w-10 h-10 sm:w-12 sm:h-12 text-blue-600 dark:text-blue-400 mx-auto mb-3 sm:mb-4" />
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">Email</h3>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">imnik2511@gmail.com</p>
                 <motion.a
                   href="mailto:imnik2511@gmail.com"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-200"
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-lg transition-colors duration-200 text-sm sm:text-base"
                 >
                   Send Email
                 </motion.a>
@@ -719,17 +720,17 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center"
             >
-              <div className="bg-white dark:bg-slate-900 p-8 rounded-lg shadow-lg">
-                <Linkedin className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">LinkedIn</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Connect with me professionally</p>
+              <div className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-lg shadow-lg">
+                <Linkedin className="w-10 h-10 sm:w-12 sm:h-12 text-blue-600 dark:text-blue-400 mx-auto mb-3 sm:mb-4" />
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">LinkedIn</h3>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">Connect with me professionally</p>
                 <motion.a
                   href="https://www.linkedin.com/in/nikhil-singh-sde/"
           target="_blank"
           rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-200"
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-lg transition-colors duration-200 text-sm sm:text-base"
                 >
                   Connect
                 </motion.a>
@@ -743,17 +744,17 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center md:col-span-2 lg:col-span-1"
             >
-              <div className="bg-white dark:bg-slate-900 p-8 rounded-lg shadow-lg">
-                <Github className="w-12 h-12 text-blue-600 dark:text-blue-400 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">GitHub</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Check out my code</p>
+              <div className="bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-lg shadow-lg">
+                <Github className="w-10 h-10 sm:w-12 sm:h-12 text-blue-600 dark:text-blue-400 mx-auto mb-3 sm:mb-4" />
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">GitHub</h3>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-3 sm:mb-4">Check out my code</p>
                 <motion.a
                   href="https://github.com/nikk2511"
           target="_blank"
           rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors duration-200"
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 sm:px-6 py-2 rounded-lg transition-colors duration-200 text-sm sm:text-base"
                 >
                   View Profile
                 </motion.a>
