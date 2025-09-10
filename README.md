@@ -4,7 +4,7 @@ A modern, responsive, and interactive portfolio website showcasing my skills, pr
 
 ## 🌟 Live Demo
 
-**Portfolio:** [https://whispr-self.vercel.app](https://whispr-self.vercel.app)  
+**Portfolio:** [https://whispr-self.vercel.app](https://nikhil-navy.vercel.app/)  
 **GitHub:** [https://github.com/nikk2511/nik-portfolio](https://github.com/nikk2511/nik-portfolio)
 
 ## ✨ Features
@@ -170,7 +170,7 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 - **LinkedIn:** [linkedin.com/in/nikhil-singh-sde](https://www.linkedin.com/in/nikhil-singh-sde/)
 - **GitHub:** [github.com/nikk2511](https://github.com/nikk2511)
 - **LeetCode:** [leetcode.com/u/nikkqwe](https://leetcode.com/u/nikkqwe/)
-- **Portfolio:** [whispr-self.vercel.app](https://whispr-self.vercel.app)
+- **Portfolio:** [whispr-self.vercel.app](https://nikhil-navy.vercel.app/)
 
 ## 🙏 Acknowledgments
 
